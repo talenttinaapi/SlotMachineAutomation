@@ -14,21 +14,12 @@ namespace AutomationWithSelenium
         /// Click on a web element and wait for page load
         /// </summary>
         /// <param name="pElement">The Web Element is used</param>
-        public static void Click(IWebElement pElement)
-        {
-            ((IJavaScriptExecutor)ConstantsLib.Driver).ExecuteScript("arguments[0].scrollIntoView(true);" + "window.scrollBy(0,-100);", pElement);
-            pElement.Click();
-        }
-
-        /// <summary>
-        /// Capture the UI control and click on it
-        /// </summary>
-        /// <param name="pBy"></param>
         public static void Click(By pBy)
         {
-            RemoteWebElement element = (RemoteWebElement)ConstantsLib.Driver.FindElement(pBy);
-            element.Click();
-          
+            IWebElement  pElement = F_General.CaptureInterface(pBy);
+            ((IJavaScriptExecutor)ConstantsLib.Driver).ExecuteScript("arguments[0].scrollIntoView(true);" + "window.scrollBy(0,-100);", pElement);
+            pElement.Click();
+            
         }
       
     }

@@ -4,6 +4,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using System.IO;
+using System.Net;
 using System.Reflection;
 
 namespace AutomationWithSelenium
@@ -50,7 +51,7 @@ namespace AutomationWithSelenium
         public void Initialize()
         {
 
-            StartDriver(Drivers.Chrome);
+            StartDriver(Drivers.Firefox);
          
         }
 

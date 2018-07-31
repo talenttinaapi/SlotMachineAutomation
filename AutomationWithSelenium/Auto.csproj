@@ -136,6 +136,12 @@
     <Error Condition="!Exists('..\packages\Selenium.WebDriver.IEDriver.3.13.0\build\Selenium.WebDriver.IEDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.IEDriver.3.13.0\build\Selenium.WebDriver.IEDriver.targets'))" />
   </Target>
   <Import Project="..\packages\Selenium.WebDriver.IEDriver.3.13.0\build\Selenium.WebDriver.IEDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.IEDriver.3.13.0\build\Selenium.WebDriver.IEDriver.targets')" />
+  <ItemGroup>
+    <Content Include="..\packages\WebDriver.IEDriverServer.win32.3.9.0\content\IEDriverServer.exe">
+      <Link>IEDriverServer.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
