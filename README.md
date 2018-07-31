@@ -1,6 +1,7 @@
-# Project Title
+# Auto Slot
 
-One Paragraph of project description goes here
+Automation script for Slot Game:
+http://slotmachinescript.com/
 
 
 ## Getting Started
