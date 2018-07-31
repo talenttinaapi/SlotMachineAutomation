@@ -23,6 +23,9 @@ Install MS Visual Studio
 Open project: Auto.snl
 ```
 ```
+Use Nuget to restore missing packages
+```
+```
 Build -> Build Solution
 ```
 
