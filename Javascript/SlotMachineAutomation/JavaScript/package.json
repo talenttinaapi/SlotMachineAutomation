@@ -1,0 +1,13 @@
+{
+  "name": "slot-machine-automation",
+  "version": "1.0.0",
+  "description": "Automation project for Slot Machine using JavaScript and Python.",
+  "main": "src/interfaces.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
